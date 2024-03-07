@@ -4,6 +4,8 @@ import Bitcoin_Logo from "../assets/Bitcoin.png"
 import Chart from './Chart';
 import Overview from './Overview';
 import Sentiment from './Sentiment';
+import About from './About';
+import Tokenomics from './Tokenomics';
 
 const Main = () => {
     return (
@@ -55,6 +57,10 @@ const Main = () => {
                 <Overview />
 
                 <Sentiment />
+
+                <About />
+
+                <Tokenomics />
             </div>
         </div>
     )
