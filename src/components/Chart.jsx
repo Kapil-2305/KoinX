@@ -28,7 +28,7 @@ function TradingViewWidget() {
                 "support_host": "https://www.tradingview.com"
             }`;
         container.current.appendChild(script);
-        },[]);
+    },[]);
 
     return (
         <div className="tradingview-widget-container" ref={container} style={{ height: "100%", width: "100%" }}>

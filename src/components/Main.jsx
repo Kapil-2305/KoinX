@@ -6,6 +6,7 @@ import Overview from './Overview';
 import Sentiment from './Sentiment';
 import About from './About';
 import Tokenomics from './Tokenomics';
+import Team from './Team';
 
 const Main = () => {
     return (
@@ -35,7 +36,7 @@ const Main = () => {
                             </div>
                         </div>
                         <div className='w-[837px] h-[574px] bg-blue-300 rounded-lg'>
-                            {/* <Chart /> */}
+                            <Chart />
                         </div>
                     </div>
                 </div>
@@ -61,6 +62,8 @@ const Main = () => {
                 <About />
 
                 <Tokenomics />
+
+                <Team />
             </div>
         </div>
     )
