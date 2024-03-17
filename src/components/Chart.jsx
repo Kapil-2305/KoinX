@@ -28,6 +28,7 @@ function TradingViewWidget() {
                 "support_host": "https://www.tradingview.com"
             }`;
         container.current.appendChild(script);
+        return () => container.current.removeChild(script);
     },[]);
 
     return (
