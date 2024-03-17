@@ -3,7 +3,7 @@ import Logo from "../assets/Nav_Logo.png"
 
 const Navbar = () => {
     return (
-        <div className='flex flex-row items-center justify-between h-[80px] p-2'>
+        <div className='flex flex-row items-center justify-between h-[80px] p-8'>
             <div>
                 <img src={Logo} alt="KoinX" />
             </div>
