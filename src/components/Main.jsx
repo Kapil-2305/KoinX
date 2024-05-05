@@ -36,7 +36,7 @@ const Main = () => {
                             </div>
                         </div>
                         <div className='w-[837px] h-[574px] bg-blue-300 rounded-lg'>
-                            {/* <Chart /> */}
+                            <Chart />
                         </div>
                     </div>
                 </div>

@@ -3,8 +3,13 @@ import React, { useEffect, useRef, memo } from 'react';
 
 function TradingViewWidget() {
     const container = useRef();
+    const isRendered = useRef(false);
 
     useEffect(() => {
+        if (isRendered.current) 
+            return;
+
+        isRendered.current = true;
         const script = document.createElement("script");
         script.src = "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
         script.type = "text/javascript";
@@ -28,7 +33,7 @@ function TradingViewWidget() {
                 "support_host": "https://www.tradingview.com"
             }`;
         container.current.appendChild(script);
-        return () => container.current.removeChild(script);
+        // return () => container.current.removeChild(script);
     },[]);
 
     return (
